@@ -1,4 +1,4 @@
-const WS_URL = `ws://${location.hostname}:8080`;
+const WS_URL = `ws://${location.hostname || 'localhost'}:8080`;
 
 const titleEl = document.getElementById('title');
 const taglineEl = document.getElementById('tagline');
