@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chessini</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <h1 id="title"></h1>
+        <p id="tagline"></p>
+      </header>
+
+      <section id="lobby" class="panel">
+        <div class="field">
+          <label id="username-label" for="username"></label>
+          <input id="username" type="text" />
+        </div>
+        <div class="field">
+          <label id="roomname-label" for="roomname"></label>
+          <input id="roomname" type="text" />
+        </div>
+        <div class="actions">
+          <button id="create-room"></button>
+          <button id="refresh-rooms"></button>
+        </div>
+        <div class="rooms">
+          <h2 id="room-list-title"></h2>
+          <ul id="room-list"></ul>
+        </div>
+      </section>
+
+      <section id="game" class="panel hidden">
+        <div class="status">
+          <p id="room-status"></p>
+          <p id="turn-status"></p>
+        </div>
+        <div class="board-wrap">
+          <canvas id="board" width="480" height="480"></canvas>
+          <aside class="legend">
+            <h3 id="legend-title"></h3>
+            <ul id="legend-list"></ul>
+          </aside>
+        </div>
+        <div class="actions">
+          <button id="leave-room"></button>
+        </div>
+      </section>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
