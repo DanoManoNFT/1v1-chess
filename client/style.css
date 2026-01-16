@@ -1,0 +1,122 @@
+:root {
+  color-scheme: light dark;
+  font-family: "Segoe UI", sans-serif;
+  background: #f5efe7;
+  color: #2e1f1a;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+header {
+  text-align: center;
+}
+
+.panel {
+  background: #fffdf9;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 12px 24px rgba(46, 31, 26, 0.12);
+}
+
+.hidden {
+  display: none;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+input {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #d0c5b8;
+  font-size: 16px;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 12px 0 18px;
+}
+
+button {
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: none;
+  background: #f08a4b;
+  color: #fffaf4;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(240, 138, 75, 0.35);
+}
+
+button.secondary {
+  background: #8b6f63;
+}
+
+.rooms ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.rooms li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: #f9f1e6;
+}
+
+.status {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.board-wrap {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+canvas {
+  border-radius: 16px;
+  box-shadow: 0 10px 18px rgba(46, 31, 26, 0.2);
+}
+
+.legend {
+  min-width: 220px;
+  background: #f9f1e6;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.legend ul {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+  display: grid;
+  gap: 6px;
+}
